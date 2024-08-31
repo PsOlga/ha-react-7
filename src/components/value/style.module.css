@@ -1,0 +1,21 @@
+.divValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecfffd;
+    flex-direction: column;
+}
+
+.h1Value {
+    margin: 20px;
+    color: #2d403e;
+}
+
+.pValue {
+    max-width: 550px;
+    color: #2d403e;
+}
+
+.imgCarib {
+    max-width: 550px;
+}

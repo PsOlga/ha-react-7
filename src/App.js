@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import { LangContext } from './context/langContext';
 import './App.css';
+import Value from './components/value';
+import ButtonLanguage from './components/ButtonLanguage';
+import Navbar from './components/navbar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  const [language, setLanguage] = useState('eng');
+
+  return(
+      <LangContext.Provider value={{language, setLanguage}}>
+           <Navbar>
+           <ButtonLanguage />
+           </Navbar>
+          <Value />
+        
+      </LangContext.Provider>
+  )
+};
 export default App;

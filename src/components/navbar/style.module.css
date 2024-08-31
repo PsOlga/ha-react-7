@@ -1,0 +1,7 @@
+.navDiv {
+
+    background-color: #9a9999;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
